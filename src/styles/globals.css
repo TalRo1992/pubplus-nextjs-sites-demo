@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.item-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  
+  .item-image small {
+    font-weight: 100;
+    color: #999;
+  }
+  
+  .item-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
