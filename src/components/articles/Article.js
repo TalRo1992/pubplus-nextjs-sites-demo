@@ -39,7 +39,7 @@ export default function Article({ article }) {
                       <div className="mt-4 text-base leading-loose text-gray-600">
                         {item.pre_image_text}
                         <img src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${item?.image?.data?.attributes.formats.medium?.url}`} alt="item Image" />
-                        <small><Link href={item?.caption_url} target='_blank'>{item.caption_description}</Link></small>
+                        <small><Link href={item?.caption_url || '/'} target='_blank'>{item.caption_description}</Link></small>
                         <br></br>
                         {item.post_image_text}
                       </div>
