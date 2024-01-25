@@ -14,12 +14,12 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <AboutHeader />
+      {/* <AboutHeader /> */}
       <AboutContent />
-      <Partners />
+      {/* <Partners />
       <Team />
       <Careers />
-      <Newsletter />
+      <Newsletter /> */}
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { getHostName, getModifiedContent } from "../../helper";
 import { headers } from "next/headers";
-import { getContactUs } from "../../api/sites";
+import { getAboutUs } from "../../api/sites";
 
 export default async function AboutContent() {
   const headersList = headers();
@@ -10,7 +10,7 @@ export default async function AboutContent() {
     hostName: hostName || ''
     // Add more placeholders as needed
   };
-  const modifiedDmcaPolicy = await getModifiedContent(getContactUs,placeholderMap, 'contactUs')
+  const modifiedDmcaPolicy = await getModifiedContent(getAboutUs,placeholderMap, 'aboutUs')
 
   return (
     <section className="py-12 sm:py-20 lg:pt-24">

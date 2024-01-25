@@ -28,3 +28,9 @@ export const getContactUs = async () => {
     const data = await res.json();
     return data.data.attributes;
 }
+
+export const getAboutUs = async () => {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/about-us`, { next: { revalidate: 3600 } });
+    const data = await res.json();
+    return data.data.attributes;
+}

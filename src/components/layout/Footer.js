@@ -29,11 +29,7 @@ const links = [
   {
     label: 'Privacy policy',
     link: '/privacy',
-  },
-  {
-    label: 'Terms & Conditions',
-    link: '/privacy',
-  },
+  }
 ]
 
 export default async function Footer() {

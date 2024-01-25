@@ -1,6 +1,6 @@
 const departments = [
   {
-    title: 'Advertise',
+    title: 'Want to pitch us a story? ',
     contactName: 'Emily Bell',
     emailAddress: 'advertise@email.com',
     phoneNumber: '+1 (800) 123-4567',
